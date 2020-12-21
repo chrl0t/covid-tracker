@@ -6,15 +6,22 @@ import React from "react";
 import * as api from "./api";
 
 class App extends React.Component {
+  state = {
+    data: {}
+  };
+
   componentDidMount() {
-    const data = api.fetchData();
-    console.log(data);
+    api.fetchData().then((data) => {
+      this.setState({ data });
+    });
   }
 
   render() {
+    const { data } = this.state;
+
     return (
       <div className='container'>
-        <DataCards />
+        <DataCards data={data} />
         <CountriesList />
         <Chart />
       </div>
