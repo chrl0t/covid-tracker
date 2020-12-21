@@ -1,11 +1,10 @@
 import "./App.css";
+import DataCards from "./components/DataCards";
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1>Hello</h1>
-      </header>
+    <div>
+      <DataCards />
     </div>
   );
 }
