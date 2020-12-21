@@ -1,5 +1,27 @@
 .container {
-  display: flex;
+  display: grid;
+  /* flex-flow: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  width: 50%;
+  height: 100%; */
+}
+
+.data-cards-container {
+  column-count: 3;
+  margin: 3rem;
+}
+
+.data-card {
+  background-color: blue;
+  width: 15rem;
+  height: 10rem;
+}
+
+.data-card-header {
+  height: 3rem;
+  background-color: green;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.3rem;
 }
