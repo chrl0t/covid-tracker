@@ -14,8 +14,7 @@
 
 .header {
   background-color: #004d99;
-  text-align: left;
-  padding-left: 1rem;
+  text-align: center;
   font-size: 2rem;
 }
 
@@ -33,6 +32,8 @@
   color: white;
   text-align: center;
   font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media screen and (min-width: 1300px) {
@@ -41,37 +42,8 @@
   }
   .header {
     background-color: #004d99;
-    text-align: left;
+    text-align: center;
     padding-left: 1rem;
     font-size: 1.5rem;
   }
-}
-
-.data-cards-container {
-  column-count: 3;
-  margin: 3rem;
-  position: relative;
-}
-
-.data-card {
-  background-color: blue;
-  width: 15rem;
-  height: 10rem;
-  padding-bottom: 2.5rem;
-}
-
-.data-card-header {
-  height: 3rem;
-  background-color: green;
-  text-align: center;
-  padding-top: 1rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.data-card-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
 }
