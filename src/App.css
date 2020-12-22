@@ -16,11 +16,35 @@
   background-color: #004d99;
   text-align: left;
   padding-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .header-title {
   color: white;
+}
+
+.footer {
+  background-color: #004d99;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-text {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1300px) {
+  .footer-text {
+    font-size: 1.5rem;
+  }
+  .header {
+    background-color: #004d99;
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
 }
 
 .data-cards-container {
