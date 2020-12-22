@@ -13,3 +13,14 @@ export const fetchData = () => {
     return amendedData;
   });
 };
+
+export const fetchDailyData = () => {
+  return axios.get(`${url}/daily`).then(({ data }) => {
+    const amendedData = data.map((dailyData) => ({
+      confirmed: dailyData.confirmed.total,
+      deaths: dailyData.deaths.total,
+      date: dailyData.reportDate
+    }));
+    return amendedData;
+  });
+};

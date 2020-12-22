@@ -24,7 +24,9 @@ class App extends React.Component {
       <div className='container'>
         <Header />
         <CountriesList />
-        <Chart />
+        <div className='chart'>
+          <Chart />
+        </div>
         <Footer data={data} />
       </div>
     );
