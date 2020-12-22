@@ -12,6 +12,17 @@
   font-family: Helvetica;
 }
 
+.header {
+  background-color: #004d99;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.header-title {
+  color: white;
+}
+
 .data-cards-container {
   column-count: 3;
   margin: 3rem;
