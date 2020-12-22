@@ -11,8 +11,11 @@ function DataCards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
         <header className='data-card-header'>Infected</header>
         <div className='data-card-data'>
           {" "}
-          {confirmed.value}
-          {format(new Date(lastUpdate), "dd/MM/yyyy' - 'HH:mm")}
+          Total Infections: {confirmed.value}
+          <footer className='data-card-footer'>
+            {" "}
+            Last Updated: {format(new Date(lastUpdate), "dd/MM/yyyy' - 'HH:mm")}
+          </footer>
         </div>
       </div>
       <div className='data-card'>

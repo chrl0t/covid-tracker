@@ -1,3 +1,7 @@
+.body {
+  font-family: Helvetica, sans-serif;
+}
+
 .container {
   display: grid;
   /* flex-flow: column;
@@ -5,17 +9,20 @@
   align-items: center;
   width: 50%;
   height: 100%; */
+  font-family: Helvetica;
 }
 
 .data-cards-container {
   column-count: 3;
   margin: 3rem;
+  position: relative;
 }
 
 .data-card {
   background-color: blue;
   width: 15rem;
   height: 10rem;
+  padding-bottom: 2.5rem;
 }
 
 .data-card-header {
@@ -24,4 +31,12 @@
   text-align: center;
   padding-top: 1rem;
   font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.data-card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }

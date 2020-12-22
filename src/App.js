@@ -2,6 +2,7 @@ import "./App.css";
 import DataCards from "./components/DataCards";
 import CountriesList from "./components/CountriesList";
 import Chart from "./components/Chart";
+import Header from "./components/Header";
 import React from "react";
 import * as api from "./api";
 
@@ -21,6 +22,7 @@ class App extends React.Component {
 
     return (
       <div className='container'>
+        <Header />
         <DataCards data={data} />
         <CountriesList />
         <Chart />
