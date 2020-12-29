@@ -35,8 +35,9 @@ const Chart = () => {
           ]
         }}
         options={{ maintainAspectRatio: false }}
-        width={650}
-        height={650}
+        width={450}
+        height={450}
+        responsive={true}
       />
     ) : null;
 

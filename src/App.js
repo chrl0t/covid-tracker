@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import CountriesList from "./components/CountriesList";
+import CountriesList from "./components/CountriesList/CountriesList";
 import Chart from "./components/Chart";
 import Footer from "./components/Footer";
 import React from "react";
