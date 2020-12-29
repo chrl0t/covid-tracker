@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { NativeSelect, FormControl } from "@material-ui/core";
+import styles from "./CountriesList.module.css";
 
 function CountriesList() {
   return (
-    <div>
-      <h1>Countries List</h1>
-    </div>
+    <FormControl className={styles.FormControl}>
+      <NativeSelect>
+        <option value='global'>Global</option>
+      </NativeSelect>
+    </FormControl>
   );
 }
 
