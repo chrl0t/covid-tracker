@@ -14,9 +14,9 @@ Check your version of Node.js - the minimum version of Node required to run loca
 
 Clone into the repo:
 
-### `git clone https://github.com/chrl0t/front-end-nc-news`
+### `git clone https://github.com/chrl0t/covid-tracker`
 
-### `cd front-end-nc-news`
+### `cd covid-tracker`
 
 Install the dependencies:
 
