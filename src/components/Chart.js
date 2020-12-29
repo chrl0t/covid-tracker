@@ -35,7 +35,7 @@ const Chart = ({ data: { confirmed, deaths }, country }) => {
         }}
         options={{ maintainAspectRatio: false }}
         width={450}
-        height={450}
+        height={525}
         responsive={true}
       />
     ) : null;
@@ -56,6 +56,10 @@ const Chart = ({ data: { confirmed, deaths }, country }) => {
         legend: { display: false },
         title: { display: true, text: `Current state in ${country}` }
       }}
+      options={{ maintainAspectRatio: false }}
+      width={450}
+      height={525}
+      responsive={true}
     />
   ) : null;
 
