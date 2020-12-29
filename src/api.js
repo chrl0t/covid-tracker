@@ -24,3 +24,11 @@ export const fetchDailyData = () => {
     return amendedData;
   });
 };
+
+export const fetchCountries = () => {
+  return axios.get(`${url}/countries`).then(({ data }) => {
+    let allCountries = data.countries;
+    const amendedData = allCountries.map((countries) => countries.name);
+    return amendedData;
+  });
+};
