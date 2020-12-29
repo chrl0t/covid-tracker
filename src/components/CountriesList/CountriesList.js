@@ -11,7 +11,7 @@ const CountriesList = ({ handleCountryChange }) => {
       setFetchedCountries(await fetchCountries());
     };
     fetchAPI();
-  }, [setFetchedCountries]);
+  }, []);
 
   return (
     <FormControl className={styles.FormControl}>

@@ -20,21 +20,21 @@ class App extends React.Component {
 
   handleCountryChange = async (country) => {
     const fetchedData = api.fetchData(country).then((data) => {
-      console.log(data);
+      this.setState({ data: data, country: country });
     });
   };
 
   render() {
-    const { data } = this.state;
+    const { data, country } = this.state;
 
     return (
       <div className='container'>
         <Header />
         <CountriesList handleCountryChange={this.handleCountryChange} />
         <div className='chart'>
-          <Chart />
+          <Chart data={data} country={country} />
         </div>
-        <Footer data={data} />
+        <Footer data={data} country={country} />
       </div>
     );
   }
